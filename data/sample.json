@@ -1,0 +1,32 @@
+[
+    {
+        "name": "abc",
+        "phone": "0000000000",
+        "dishes": "Sample",
+        "paymentModes": "cash"
+    },
+    {
+        "name": "abc",
+        "phone": "0000000000",
+        "dishes": "Pav Bhaji",
+        "paymentModes": "cash"
+    },
+    {
+        "name": "abc",
+        "phone": "0000000000",
+        "dishes": "Pav Bhaji",
+        "paymentModes": "cash"
+    },
+    {
+        "name": "abc",
+        "phone": "0000000000",
+        "dishes": "Pav Bhaji",
+        "paymentModes": "cash"
+    },
+    {
+        "name": "abc",
+        "phone": "0000000000",
+        "dishes": "Pav Bhaji",
+        "paymentModes": "cash"
+    }
+]
