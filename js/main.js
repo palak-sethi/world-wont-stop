@@ -1,41 +1,3 @@
-var openmodal = document.querySelectorAll('.modal-open')
-for (var i = 0; i < openmodal.length; i++) {
-    openmodal[i].addEventListener('click', function (event) {
-        event.preventDefault()
-        toggleModal()
-    })
-}
-
-const overlay = document.querySelector('.modal-overlay')
-overlay.addEventListener('click', toggleModal)
-
-var closemodal = document.querySelectorAll('.modal-close')
-for (var i = 0; i < closemodal.length; i++) {
-    closemodal[i].addEventListener('click', toggleModal)
-}
-
-document.onkeydown = function (evt) {
-    evt = evt || window.event
-    var isEscape = false
-    if ("key" in evt) {
-        isEscape = (evt.key === "Escape" || evt.key === "Esc")
-    } else {
-        isEscape = (evt.keyCode === 27)
-    }
-    if (isEscape && document.body.classList.contains('modal-active')) {
-        toggleModal()
-    }
-};
-
-
-function toggleModal() {
-    const body = document.querySelector('body')
-    const modal = document.querySelector('.modal')
-    modal.classList.toggle('opacity-0')
-    modal.classList.toggle('pointer-events-none')
-    body.classList.toggle('modal-active')
-}
-
 async function postData(url = '', data = {}) {
     const response = await fetch(url);
     return await response.json();
@@ -44,7 +6,7 @@ async function postData(url = '', data = {}) {
 postData("../data/sample.json")
     .then(data => {
         appendData(data);
-    })
+    }).then(() => modalHelper())
 
 function appendData(data) {
 
@@ -73,5 +35,44 @@ function appendData(data) {
 
         mainContainer.innerHTML = html;
     }
-    
+
+}
+
+function modalHelper() {
+    var openmodal = document.querySelectorAll('.modal-open')
+    for (var i = 0; i < openmodal.length; i++) {
+        openmodal[i].addEventListener('click', function (event) {
+            event.preventDefault()
+            toggleModal()
+        })
+    }
+
+    const overlay = document.querySelector('.modal-overlay')
+    overlay.addEventListener('click', toggleModal)
+
+    var closemodal = document.querySelectorAll('.modal-close')
+    for (var i = 0; i < closemodal.length; i++) {
+        closemodal[i].addEventListener('click', toggleModal)
+    }
+
+    document.onkeydown = function (evt) {
+        evt = evt || window.event
+        var isEscape = false
+        if ("key" in evt) {
+            isEscape = (evt.key === "Escape" || evt.key === "Esc")
+        } else {
+            isEscape = (evt.keyCode === 27)
+        }
+        if (isEscape && document.body.classList.contains('modal-active')) {
+            toggleModal()
+        }
+    };
+}
+
+function toggleModal() {
+    const body = document.querySelector('body')
+    const modal = document.querySelector('.modal')
+    modal.classList.toggle('opacity-0')
+    modal.classList.toggle('pointer-events-none')
+    body.classList.toggle('modal-active')
 }
