@@ -222,6 +222,16 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* background-color: cornflowerblue; */
 }
 
+/* Landing SVG temp fix */
+@media only screen and (max-width: 762px) {
+    .landing-svg {
+        display: unset !important;
+    }
+}
+@media only screen and (max-width: 1288px) {
+    .landing-svg {
+        display: none;
+    }
+}
