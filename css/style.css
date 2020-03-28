@@ -225,30 +225,3 @@ body {
     /* background-color: cornflowerblue; */
 }
 
-.Card {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    overflow: hidden;
-    /* background-color: burlywood; */
-    margin-top: 2%;
-}
-
-.CardImage {
-    flex-basis: 40%;
-    background-color: aliceblue;
-
-}
-
-.CardDetails {
-    flex-basis: 60%;
-    display: flex;
-    background-color: black;
-    color: white;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 0 0 0 10%;
-
-}
