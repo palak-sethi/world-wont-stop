@@ -193,14 +193,14 @@
     }
 }
 
-/* Intro Animation End */
-
+/* General Styling */
 body {
     font-family: 'Source Sans Pro', sans-serif;
     background-image: url('./assets/bg.svg');
 }
 
-.SearchContainer {
+.searchcontainer {
+    background-image: url('./assets/search-bg.png');
     width: 70%;
     text-align: center;
 }
@@ -222,6 +222,26 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+/* Symptop Checker Modal */
+.iframe-container {
+    overflow: hidden;
+    /* Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625) */
+    /* padding-top: 56.25%; */
+    position: relative;
+}
+
+.iframe-container iframe {
+    border: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    position: fixed;
+    height: 80%;
+    width: 80%;
 }
 
 /* Landing SVG temp fix */

@@ -1,18 +1,27 @@
-async function postData(url = '', data = {}) {
-    const response = await fetch(url);
-    return await response.json();
-}
+var mainContainer = document.getElementsByClassName("componentContainer")[0];
+var searchBox = document.getElementById("search_box");
 
-postData("../data/sample.json")
-    .then(data => {
-        appendData(data);
-    }).then(() => modalHelper())
+async function postData(url = '', searchText) {
+    const response = await fetch(url);
+    const cards = await response.json();
+
+    let matches = cards.filter(card => {
+        const regex = new RegExp(`^${searchText}`, 'gi');
+        return card.name.match(regex);
+    })
+
+    if (searchText.length === 0) {
+        matches = []
+        mainContainer.innerHTML = '';
+    }
+
+    appendData(matches);
+}
 
 function appendData(data) {
 
-    var mainContainer = document.getElementsByClassName("componentContainer")[0];
-
     if (data.length > 0) {
+
         const html = data.map(match => `
         <div class="md:flex bg-gray-300 shadow-lg  rounded-lg p-6 mt-10 md:p-10" style="width: 50%;">
         <img class="h-16 w-16 md:h-40 md:w-40 rounded-full mx-auto md:mx-0 md:mr-16" src="https://avatars.mds.yandex.net/get-altay/226077/2a00000160b9f8f243035488b3fde484ff3e/L">
@@ -34,10 +43,21 @@ function appendData(data) {
         `).join('');
 
         mainContainer.innerHTML = html;
+    } else {
+        mainContainer.innerHTML = '';
     }
 
 }
 
+// Symptom Checker Modal
+function work() {
+    var frameholder = document.getElementById('mainCovid');
+    frameholder.classList.toggle('hidden');
+    document.getElementById('covid').src = "https://covid.bhaarat.ai/workflow";
+    document.getElementById('backdrop').classList.toggle('hidden');
+}
+
+// Menu Modal
 function modalHelper() {
     var openmodal = document.querySelectorAll('.modal-open')
     for (var i = 0; i < openmodal.length; i++) {
@@ -76,3 +96,5 @@ function toggleModal() {
     modal.classList.toggle('pointer-events-none')
     body.classList.toggle('modal-active')
 }
+
+searchBox.addEventListener('keyup', () => postData('../data/sample.json', searchBox.value));
