@@ -160,7 +160,7 @@
       pandemic</p>
     <div class="pt-2 relative mx-auto text-gray-600 .text-center">
       <input class="border-2 border-gray-300 bg-white h-10 SearchInput px-5 rounded-lg text-lg focus:outline-none"
-        type="search" name="search" placeholder="Enter City">
+        type="search" id="search_box" name="search" placeholder="Enter City">
       <button type="submit" class="SearchBtn">
         <svg class="text-gray-600 h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
@@ -176,78 +176,7 @@
 
   <div class="componentContainer">
 
-
-
-    <!-- Render this baar baar -->
-
-    <div class="md:flex bg-gray-300 shadow-lg  rounded-lg p-6 mt-10 md:p-10" style="width: 50%;">
-      <img class="h-16 w-16 md:h-40 md:w-40 rounded-full mx-auto md:mx-0 md:mr-16"
-        src="https://avatars.mds.yandex.net/get-altay/226077/2a00000160b9f8f243035488b3fde484ff3e/L">
-      <div class="text-center md:text-left">
-        <h2 class="text-lg md:text-3xl"> Lmao assface </h2>
-        <div class="text-gray-600 md:text-lg">some other detail?</div>
-        <div class="text-red-600 md:text-lg">phonesvg 69696969</div>
-        <p class="text-sm md:text-lg text-gray-600 flex text-center items-center">
-          Payment method: &nbsp;
-          <svg class="fill-current text-gray-500 w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-            <path
-              d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
-          </svg>
-          <!-- Insert different svg graphics like cash for COD, paytm , atm for online banking etc. -->
-        </p>
-
-        <button
-          class="modal-open md:text-lg bg-transparent border border-gray-500 hover:border-red-600 text-gray-500 hover:text-red-600 font-bold py-2 px-10 my-2 rounded-lg text-sm">Menu</button>
-      </div>
-    </div>
-
-
-
-    <div class="md:flex bg-gray-300 shadow-lg  rounded-lg p-6 mt-8 md:p-10">
-      <img class="h-16 w-16 md:h-40 md:w-40 rounded-full mx-auto md:mx-0 md:mr-6"
-        src="https://avatars.mds.yandex.net/get-altay/226077/2a00000160b9f8f243035488b3fde484ff3e/L">
-      <div class="text-center md:text-left">
-        <h2 class="text-lg md:text-3xl"> Lmao assface </h2>
-        <div class="text-gray-600 md:text-lg">some other detail?</div>
-        <div class="text-red-600 md:text-lg">phonesvg 69696969</div>
-        <p class="text-sm md:text-lg text-gray-600 flex items-center">
-          Payment method: &nbsp;
-          <svg class="fill-current text-gray-500 w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-            <path
-              d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
-          </svg>
-          <!-- Insert different svg graphics like cash for COD, paytm , atm for online banking etc. -->
-        </p>
-
-        <button
-          class="modal-open md:text-lg bg-transparent border border-gray-500 hover:border-red-600 text-gray-500 hover:text-red-600 font-bold py-2 px-4 rounded-full text-sm">Dishes
-          offered in modal?</button>
-      </div>
-    </div>
-    <div class="md:flex bg-gray-300 shadow-lg  rounded-lg p-6 mt-8 md:p-10">
-      <img class="h-16 w-16 md:h-40 md:w-40 rounded-full mx-auto md:mx-0 md:mr-6"
-        src="https://avatars.mds.yandex.net/get-altay/226077/2a00000160b9f8f243035488b3fde484ff3e/L">
-      <div class="text-center md:text-left">
-        <h2 class="text-lg md:text-3xl"> Lmao assface </h2>
-        <div class="text-gray-600 md:text-lg">some other detail?</div>
-        <div class="text-red-600 md:text-lg">phonesvg 69696969</div>
-        <p class="text-sm md:text-lg text-gray-600 flex items-center">
-          Payment method: &nbsp;
-          <svg class="fill-current text-gray-500 w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-            <path
-              d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
-          </svg>
-          <!-- Insert different svg graphics like cash for COD, paytm , atm for online banking etc. -->
-        </p>
-
-        <button
-          class="modal-open md:text-lg bg-transparent border border-gray-500 hover:border-red-600 text-gray-500 hover:text-red-600 font-bold py-2 px-4 rounded-full text-sm">Dishes
-          offered in modal?</button>
-      </div>
-    </div>
-
-
-    <!-- another test card -->
+    <!-- Cards render here -->
 
   </div>
   <!--Modal-->
