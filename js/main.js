@@ -18,6 +18,12 @@ async function postData(url = '', searchText) {
     appendData(matches);
 }
 
+async function covidCasesData(url) {
+    const response = await fetch(url);
+    const cases = await response.json();
+    return cases;
+}
+
 function appendData(data) {
 
     if (data.length > 0) {
@@ -107,5 +113,21 @@ function toggleModal() {
     modal.classList.toggle('pointer-events-none')
     body.classList.toggle('modal-active')
 }
+
+let cases;
+
+covidCasesData('https://covid2019-api.herokuapp.com/v2/country/india').then((res) => {
+    cases = res;
+    document.getElementById('india_cases_active').innerHTML = `${cases.data.active}`;
+    document.getElementById('india_cases_deaths').innerHTML = `Deaths: ${cases.data.deaths}`;
+    document.getElementById('india_cases_recovered').innerHTML = `India (Recovered): ${cases.data.recovered}`;
+});
+
+covidCasesData('https://covid2019-api.herokuapp.com/v2/total').then((res) => {
+    cases = res;
+    document.getElementById('global_cases_active').innerHTML = `${cases.data.confirmed}`;
+    document.getElementById('global_cases_recovered').innerHTML = `${cases.data.recovered}`;
+    document.getElementById('global_cases_deaths').innerHTML = `Deaths: ${cases.data.deaths}`;
+})
 
 searchBox.addEventListener('keyup', () => postData('../data/sample.json', searchBox.value).then(() => modalHelper()));
