@@ -55,6 +55,21 @@ function appendData(data) {
 
 }
 
+// Common Myths Logic
+var myRadios = document.getElementsByName('tabs2');
+var setCheck;
+var x = 0;
+for(x = 0; x < myRadios.length; x++){
+    myRadios[x].onclick = function(){
+        if(setCheck != this){
+             setCheck = this;
+        }else{
+            this.checked = false;
+            setCheck = null;
+    }
+    };
+}
+
 // Symptom Checker Modal
 function work() {
     var frameholder = document.getElementById('mainCovid');
@@ -105,7 +120,6 @@ function modalHelper() {
         }
     };
 }
-
 function toggleModal() {
     const body = document.querySelector('body')
     const modal = document.querySelector('.modal')
@@ -114,20 +128,21 @@ function toggleModal() {
     body.classList.toggle('modal-active')
 }
 
+// API COVID-19 Stats data
 let cases;
 
 covidCasesData('https://covid2019-api.herokuapp.com/v2/country/india').then((res) => {
     cases = res;
     document.getElementById('india_cases_active').innerHTML = `${cases.data.active}`;
-    document.getElementById('india_cases_deaths').innerHTML = `Deaths: ${cases.data.deaths}`;
-    document.getElementById('india_cases_recovered').innerHTML = `India (Recovered): ${cases.data.recovered}`;
+    document.getElementById('india_cases_deaths').innerHTML = `Deaths (India): ${cases.data.deaths}`;
+    document.getElementById('india_cases_recovered').innerHTML = `Recovered (India): ${cases.data.recovered}`;
 });
 
 covidCasesData('https://covid2019-api.herokuapp.com/v2/total').then((res) => {
     cases = res;
     document.getElementById('global_cases_active').innerHTML = `${cases.data.confirmed}`;
     document.getElementById('global_cases_recovered').innerHTML = `${cases.data.recovered}`;
-    document.getElementById('global_cases_deaths').innerHTML = `Deaths: ${cases.data.deaths}`;
+    document.getElementById('global_cases_deaths').innerHTML = `Deaths (Global): ${cases.data.deaths}`;
 })
 
 searchBox.addEventListener('keyup', () => postData('../data/sample.json', searchBox.value).then(() => modalHelper()));

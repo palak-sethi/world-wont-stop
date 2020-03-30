@@ -98,7 +98,7 @@
               <p class="text-base text-grey-dark">Active Covid Cases (India)</p>
             </div>
             <div>
-              <p class="text-2xl text-grey-darker font-bold" id="india_cases_active"></p>
+              <p class="text-2xl text-orange-500 font-bold text-center" id="india_cases_active"></p>
             </div>
             <div class="text-sm">
               <p class="text-grey-dark" id="india_cases_deaths"></p>
@@ -111,7 +111,7 @@
               <p class="text-base text-grey-dark">Active Covid Cases (Global)</p>
             </div>
             <div>
-              <p class="text-2xl text-grey-darker font-bold" id="global_cases_active"></p>
+              <p class="text-2xl text-red-500 font-bold text-center" id="global_cases_active"></p>
             </div>
             <div class="text-sm">
               <p class="text-grey-dark" id="global_cases_deaths"></p>
@@ -124,7 +124,7 @@
               <p class="text-base text-grey-dark">Total Cases Recovered (Global)</p>
             </div>
             <div>
-              <p class="text-2xl text-grey-darker font-bold" id="global_cases_recovered"></p>
+              <p class="text-2xl text-green-500 font-bold text-center" id="global_cases_recovered"></p>
             </div>
             <div class="text-sm">
               <p class="text-grey-dark" id="india_cases_recovered"></p>
@@ -158,11 +158,10 @@
         </button>
       </div>
     </div>
-     
-    <!-- Renders result cards -->
+      <!-- Renders result cards -->
       <div class="componentContainer">
-      </div>
-</div>
+    </div>
+  </div>
   <!-- Our Mission Section -->
   <div class="mx-auto p-16 sm:p-24 lg:p-48 bg-gray-200">
     
@@ -192,6 +191,35 @@
     
   </div>
   <!-- Our Mission end -->
+
+  <!-- Common Myths -->
+  <div class="w-full md:w-3/5 mx-auto p-8">
+      <p class="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3lg p-6">COVID-19 Common Myths, BUSTED!</p>
+      <div class="shadow-md">
+        <div class="tab w-full overflow-hidden border-t">
+            <input class="absolute opacity-0" id="tab-single-one" type="radio" name="tabs2">
+            <label class="block p-5 leading-normal cursor-pointer" for="tab-single-one">Non-veg food causes Coronavirus.</label>
+            <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-red-500 leading-normal">
+              <p class="p-5">This is completely false, there has been no evidence on getting infected by meat or food of any kind.</p>
+            </div>
+        </div>
+        <div class="tab w-full overflow-hidden border-t">
+            <input class="absolute opacity-0" id="tab-single-two" type="radio" name="tabs2">
+            <label class="block p-5 leading-normal cursor-pointer" for="tab-single-two"> Food outlets are the most susceptible places to get infected. </label>
+            <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-red-500 leading-normal">
+              <p class="p-5">Although there stands a risk of getting infected if you come into contact with someone infected at a restaurant, food outlets are taking all preventive measures to secure themselves and their delivery personnel. </p>
+            </div>
+        </div>
+        <div class="tab w-full overflow-hidden border-t">
+            <input class="absolute opacity-0" id="tab-single-three" type="radio" name="tabs2">
+            <label class="block p-5 leading-normal cursor-pointer" for="tab-single-three">Can I get infected from the delivery person?</label>
+            <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-red-500 leading-normal">
+              <p class="p-5">We will have every registered person on our index to go through a COVID-19 test and only sanction them if they test negative. As a precaution, delivery personnel will have access to masks and sanitizers at factory prices to ensure a safe delivery.</p>
+            </div>
+        </div>
+      </div>
+  </div>
+  <!-- Common Myths End -->
 
   <!--Menu Modal-->
   <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center">
