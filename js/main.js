@@ -47,7 +47,7 @@ function appendData(data) {
 
         const html = data.map(match => `
         <div class="md:flex bg-gray-300 shadow-lg  rounded-lg p-6 mt-10 md:p-10" style="width: 50%;">
-        <img class="h-16 w-16 md:h-40 md:w-40 rounded-full mx-auto md:mx-0 md:mr-16" src="https://avatars.mds.yandex.net/get-altay/226077/2a00000160b9f8f243035488b3fde484ff3e/L">
+        <img class="h-16 w-16 md:h-40 md:w-40 rounded-full mx-auto md:mx-0 md:mr-16" src="./assets/profile-icon.png">
         <div class="text-center md:text-left">
           <h2 class="text-lg md:text-3xl"> ${match.name} </h2>
             <div class="text-gray-600 md:text-lg">${match.city}, ${match.country}</div>
