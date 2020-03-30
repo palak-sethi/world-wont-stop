@@ -7,7 +7,7 @@ async function postData(url = '', searchText) {
 
     let matches = cards.filter(card => {
         const regex = new RegExp(`^${searchText}`, 'gi');
-        return card.name.match(regex);
+        return card.city.match(regex) || card.country.match(regex);
     })
 
     if (searchText.length === 0) {
@@ -27,7 +27,7 @@ function appendData(data) {
         <img class="h-16 w-16 md:h-40 md:w-40 rounded-full mx-auto md:mx-0 md:mr-16" src="https://avatars.mds.yandex.net/get-altay/226077/2a00000160b9f8f243035488b3fde484ff3e/L">
         <div class="text-center md:text-left">
           <h2 class="text-lg md:text-3xl"> ${match.name} </h2>
-            <div class="text-gray-600 md:text-lg">some other detail?</div>
+            <div class="text-gray-600 md:text-lg">${match.city}, ${match.country}</div>
             <div class="text-red-600 md:text-lg">Phone: ${match.phone}</div>
             <p class="text-sm md:text-lg text-gray-600 flex text-center items-center">
                 Payment method: &nbsp; 
@@ -108,4 +108,4 @@ function toggleModal() {
     body.classList.toggle('modal-active')
 }
 
-searchBox.addEventListener('keyup', () => postData('../data/sample.json', searchBox.value));
+searchBox.addEventListener('keyup', () => postData('../data/sample.json', searchBox.value).then(() => modalHelper()));
