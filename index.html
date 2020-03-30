@@ -63,7 +63,7 @@
         <h1
           class="my-4 text-3xl md:text-5xl text-red-600 font-bold leading-tight text-center md:text-left slide-in-bottom-h1">
           The world will not stop moving and neither should yours!</h1>
-        <p class="leading-normal text-base md:text-2xl mb-8 text-center md:text-left slide-in-bottom-subtitle">Providing goverment sanctioned employment to daily wage street vendors so you can continue to enjoy their food at home</p>
+        <p class="leading-normal text-base md:text-2xl mb-8 text-center md:text-left slide-in-bottom-subtitle">Providing goverment sanctioned employment to daily wage street vendors and small shops so you can continue to enjoy their food at home</p>
 
         <p class="text-blue-400 font-bold pb-8 lg:pb-6 text-center md:text-left fade-in">Our app arriving soon on:</p>
         <div class="flex flex-wrap w-full justify-center md:justify-start pb-24 lg:pb-0 fade-in">
@@ -151,13 +151,17 @@
       </div>
   </div>
 
-  <div style="background-image: url('./assets/search-bg.png');">
-    <div class="searchcontainer container mx-auto my-16 px-4">
-      <p class="text-5xl ...">
+  <div style="background-image: url('./assets/search-bg.png');background-size: cover;" class="h-screen overflow-y-auto" >
+    <div class=" rounded text-center w-4/6 overflow-hidden shadow-lg mx-auto my-16 py-8" style="background-color: rgba(255, 255, 255, 0.658);">
+      
+      <p class="opacity-100 text-5xl ...">
         Find Your Nearest Vendors
       </p>
-      <p class="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3lg ...">They need our help too to survive this
+      <p class="opacity-100 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3lg ...">They need our help too to survive this
         pandemic</p>
+    </div>
+    <div class="searchcontainer container mx-auto my-16 px-4">
+   
       <div class="pt-2 relative mx-auto text-gray-600 .text-center">
         <input class="border-2 border-gray-300 bg-white h-10 SearchInput px-5 rounded-lg text-lg focus:outline-none"
           type="search" id="search_box" name="search" placeholder="Enter City">
@@ -175,10 +179,10 @@
      
     <!-- Renders result cards -->
       <div class="componentContainer">
-   </div>
+      </div>
 </div>
   <!-- Our Mission Section -->
-  <div class="m-10 mx-auto p-16 sm:p-24 lg:p-48 bg-gray-200">
+  <div class="mx-auto p-16 sm:p-24 lg:p-48 bg-gray-200">
     
     <!-- Carousel Body -->
     <div class="relative rounded-lg block md:flex items-center bg-gray-100 shadow-xl" style="min-height: 19rem;">
