@@ -61,7 +61,7 @@ function appendData(data) {
                 <!-- Insert different svg graphics like cash for COD, paytm , atm for online banking etc. -->
             </p>
             
-            <button class="modal-open md:text-lg bg-transparent border border-gray-500 hover:border-red-600 text-gray-500 hover:text-red-600 font-bold py-2 px-10 my-2 rounded-lg text-sm">Menu</button>
+            <button class="modal-open md:text-lg bg-transparent border border-gray-500 hover:border-red-600 text-gray-500 hover:text-red-600 font-bold py-2 px-10 my-2 rounded-lg text-sm" onClick="modalOpen('${match.dishes}')">Menu</button>
         </div>
       </div>
         `).join('');
@@ -71,6 +71,11 @@ function appendData(data) {
         mainContainer.innerHTML = '';
     }
 
+}
+
+function modalOpen(arr) {
+    document.getElementById('modal-content').innerHTML = `<p>${arr}</p> - &#8377; 60`;
+    console.log(arr);
 }
 
 // Common Myths Logic
