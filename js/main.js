@@ -55,6 +55,17 @@ function work() {
     frameholder.classList.toggle('hidden');
     document.getElementById('covid').src = "https://covid.bhaarat.ai/workflow";
     document.getElementById('backdrop').classList.toggle('hidden');
+    toggleButtonText();
+}
+function toggleButtonText() {
+        var change = document.getElementById("show");
+        if (change.innerHTML == "Go Back")
+        {
+            change.innerHTML = "Check For Symptoms";
+        }
+        else {
+            change.innerHTML = "Go Back";
+        }
 }
 
 // Menu Modal
