@@ -49,6 +49,26 @@ function appendData(data) {
 
 }
 
+// Symptom Checker Modal
+function work() {
+    var frameholder = document.getElementById('mainCovid');
+    frameholder.classList.toggle('hidden');
+    document.getElementById('covid').src = "https://covid.bhaarat.ai/workflow";
+    document.getElementById('backdrop').classList.toggle('hidden');
+    toggleButtonText();
+}
+function toggleButtonText() {
+        var change = document.getElementById("show");
+        if (change.innerHTML == "Go Back")
+        {
+            change.innerHTML = "Check For Symptoms";
+        }
+        else {
+            change.innerHTML = "Go Back";
+        }
+}
+
+// Menu Modal
 function modalHelper() {
     var openmodal = document.querySelectorAll('.modal-open')
     for (var i = 0; i < openmodal.length; i++) {
