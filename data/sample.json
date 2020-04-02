@@ -34,7 +34,7 @@
         "name": "Gurmeet",
         "phone": "8613579452",
         "dishes": ["Momos", "Spring Rolls"],
-        "paymentModes": ["Cash"],
+        "paymentModes": ["Cash", "Paytm", "Paypal"],
         "city": "Chandigarh",
         "country": "India"
     },
