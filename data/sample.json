@@ -10,7 +10,7 @@
         "name": "Ram",
         "phone": "9653652147",
         "dishes": ["Burger"],
-        "paymentModes": "GPay",
+        "paymentModes": ["GPay"],
         "city": "Patna",
         "country": "India"
     },
@@ -34,7 +34,7 @@
         "name": "Gurmeet",
         "phone": "8613579452",
         "dishes": ["Momos", "Spring Rolls"],
-        "paymentModes": "Cash",
+        "paymentModes": ["Cash", "Paytm", "Paypal"],
         "city": "Chandigarh",
         "country": "India"
     },
@@ -42,7 +42,7 @@
         "name": "Gangaram",
         "phone": "8456211564",
         "dishes": ["Kathi Rolls"],
-        "paymentModes": "Cash",
+        "paymentModes": ["Cash"],
         "city": "Gurgaon",
         "country": "India"
     },
@@ -50,7 +50,7 @@
         "name": "Girdhar",
         "phone": "8254136788",
         "dishes": ["Golgappa"],
-        "paymentModes": "Cash",
+        "paymentModes": ["Cash"],
         "city": "Kolkata",
         "country": "India"
     },
@@ -58,7 +58,7 @@
         "name": "Pradhan",
         "phone": "9465312879",
         "dishes": ["Tandoori Chaap"],
-        "paymentModes": "Cash",
+        "paymentModes": ["Cash"],
         "city": "Ahmedabad",
         "country": "India"
     },
@@ -66,7 +66,7 @@
         "name": "Tilak",
         "phone": "7613254987",
         "dishes": ["Tandoori Chicken"],
-        "paymentModes": "Cash",
+        "paymentModes": ["Cash"],
         "city": "Hyderabad",
         "country": "India"
     },
@@ -74,7 +74,7 @@
         "name": "Gurpreet",
         "phone": "7615432597",
         "dishes": ["Noodles", "Manchurian"],
-        "paymentModes": "Cash",
+        "paymentModes": ["Cash"],
         "city": "Ambala",
         "country": "India"
     },
@@ -82,7 +82,7 @@
         "name": "Harman",
         "phone": "6458791354",
         "dishes": ["Chhole Bhature"],
-        "paymentModes": "Cash",
+        "paymentModes": ["Cash"],
         "city": "Patiala",
         "country": "India"
     },
@@ -90,7 +90,7 @@
         "name": "Shamlal",
         "phone": "8546321987",
         "dishes": ["Pao Bhaji"],
-        "paymentModes": "Cash",
+        "paymentModes": ["Cash"],
         "city": "Ludhiana",
         "country": "India"
     },
@@ -98,7 +98,7 @@
         "name": "Jethalal",
         "phone": "6235236789",
         "dishes": ["Vada Pao"],
-        "paymentModes": "Cash",
+        "paymentModes": ["Cash"],
         "city": "Mumbai",
         "country": "India"
     },
@@ -106,7 +106,7 @@
         "name": "Karan",
         "phone": "8542362145",
         "dishes": ["Dabeli"],
-        "paymentModes": "Cash",
+        "paymentModes": ["Cash"],
         "city": "Kolhapur",
         "country": "India"
     },
@@ -114,7 +114,7 @@
         "name": "Manan",
         "phone": "7508248066",
         "dishes": ["Golgappa"],
-        "paymentModes": "Cash",
+        "paymentModes": ["Cash"],
         "city": "Delhi",
         "country": "India"
     },
@@ -122,7 +122,7 @@
         "name": "Amit",
         "phone": "7659852145",
         "dishes": ["Bhelpuri"],
-        "paymentModes": "Cash",
+        "paymentModes": ["Cash"],
         "city": "Chandigarh",
         "country": "India"
     },
@@ -130,7 +130,7 @@
         "name": "Arjun",
         "phone": "8254632514",
         "dishes": ["Chaat"],
-        "paymentModes": "Cash",
+        "paymentModes": ["Cash"],
         "city": "Jammu",
         "country": "India"
     },
@@ -138,7 +138,7 @@
         "name": "Ajay",
         "phone": "7625143265",
         "dishes": ["Pao Bhaji"],
-        "paymentModes": "Cash",
+        "paymentModes": ["Cash"],
         "city": "Ludhiana",
         "country": "India"
     },
@@ -146,7 +146,7 @@
         "name": "Adarsh",
         "phone": "8521463259",
         "dishes": ["Samosa", "Kachori"],
-        "paymentModes": "Cash",
+        "paymentModes": ["Cash"],
         "city": "Jalandhar",
         "country": "India"
     },
@@ -154,7 +154,7 @@
         "name": "Lakhan",
         "phone": "9652314865",
         "dishes": ["Kathi Rolls"],
-        "paymentModes": "Cash",
+        "paymentModes": ["Cash"],
         "city": "Bhojpur",
         "country": "India"
     },
@@ -162,7 +162,7 @@
         "name": "Magan",
         "phone": "8563214652",
         "dishes": ["Bread Pakora"],
-        "paymentModes": "Cash",
+        "paymentModes": ["Cash"],
         "city": "Rajasthan",
         "country": "India"
     },
@@ -170,7 +170,7 @@
         "name": "Bharat",
         "phone": "7541236985",
         "dishes": ["Poha"],
-        "paymentModes": "Cash",
+        "paymentModes": ["Cash"],
         "city": "Nagpur",
         "country": "India"
     },
@@ -178,7 +178,7 @@
         "name": "Jagat",
         "phone": "9521463879",
         "dishes": ["Aloo Tikki"],
-        "paymentModes": "Cash",
+        "paymentModes": ["Cash"],
         "city": "Gujarat",
         "country": "India"
     },
@@ -186,7 +186,7 @@
         "name": "Samarth",
         "phone": "7546321895",
         "dishes": ["Noodles", "Manchurian", "Chilly Paneer"],
-        "paymentModes": "Cash",
+        "paymentModes": ["Cash"],
         "city": "Chandigarh",
         "country": "India"
     },
@@ -194,7 +194,7 @@
         "name": "Sagar",
         "phone": "7125463985",
         "dishes": ["Chilly Paneer", "Chilly Chicken"],
-        "paymentModes": "Cash",
+        "paymentModes": ["Cash"],
         "city": "Mumbai",
         "country": "India"
     },
@@ -202,7 +202,7 @@
         "name": "Gagan",
         "phone": "8216453289",
         "dishes": ["Galauti Kebab"],
-        "paymentModes": "Cash",
+        "paymentModes": ["Cash"],
         "city": "Hyderabad",
         "country": "India"
     },
@@ -210,7 +210,7 @@
         "name": "Raman",
         "phone": "7645821349",
         "dishes": ["Biryani"],
-        "paymentModes": "Cash",
+        "paymentModes": ["Cash"],
         "city": "Bangalore",
         "country": "India"
     },
@@ -251,7 +251,7 @@
         "name": "Bill",
         "phone": "421659875",
         "dishes": ["Burritos"],
-        "paymentModes": "Cash",
+        "paymentModes": ["Cash"],
         "city": "Mexico City",
         "country": "Mexico"
     },
@@ -259,7 +259,7 @@
         "name": "Joe",
         "phone": "154876235",
         "dishes": ["Churros"],
-        "paymentModes": "Cash",
+        "paymentModes": ["Cash"],
         "city": "Seville",
         "country": "Spain"
     },
@@ -267,7 +267,7 @@
         "name": "Adam",
         "phone": "154879652",
         "dishes": ["Waffles"],
-        "paymentModes": "Cash",
+        "paymentModes": ["Cash"],
         "city": "London",
         "country": "UK"
     },
@@ -275,7 +275,7 @@
         "name": "Alan",
         "phone": "378549621",
         "dishes": ["Hot Dogs"],
-        "paymentModes": "Cash",
+        "paymentModes": ["Cash"],
         "city": "New York",
         "country": "USA"
     },
@@ -283,7 +283,7 @@
         "name": "Charlie",
         "phone": "153497865",
         "dishes": ["Tacos"],
-        "paymentModes": "Cash",
+        "paymentModes": ["Cash"],
         "city": "Tijuana",
         "country": "Mexico"
     },
@@ -291,7 +291,7 @@
         "name": "Steve",
         "phone": "278546932",
         "dishes": ["Hamburger"],
-        "paymentModes": "Cash",
+        "paymentModes": ["Cash"],
         "city": "Ohio",
         "country": "USA"
     },
@@ -299,7 +299,7 @@
         "name": "Chuck",
         "phone": "164985234",
         "dishes": ["Corn Dogs"],
-        "paymentModes": "Cash",
+        "paymentModes": ["Cash"],
         "city": "Toronto",
         "country": "Canada"
     },
@@ -307,7 +307,7 @@
         "name": "Peter",
         "phone": "316458246",
         "dishes": ["Bagel"],
-        "paymentModes": "Cash",
+        "paymentModes": ["Cash"],
         "city": "Warsaw",
         "country": "Poland"
     },
@@ -315,7 +315,7 @@
         "name": "Henry",
         "phone": "325469852",
         "dishes": ["Crepe"],
-        "paymentModes": "Cash",
+        "paymentModes": ["Cash"],
         "city": "Paris",
         "country": "France"
     },
@@ -323,7 +323,7 @@
         "name": "Billy",
         "phone": "421659785",
         "dishes": ["Dimsum"],
-        "paymentModes": "Cash",
+        "paymentModes": ["Cash"],
         "city": "Beijing",
         "country": "China"
     },
@@ -331,7 +331,7 @@
         "name": "William",
         "phone": "124698562",
         "dishes": ["Doughnut"],
-        "paymentModes": "Cash",
+        "paymentModes": ["Cash"],
         "city": "Ohio",
         "country": "USA"
     },
@@ -339,7 +339,7 @@
         "name": "Justin",
         "phone": "264585235",
         "dishes": ["Fish and Chips"],
-        "paymentModes": "Cash",
+        "paymentModes": ["Cash"],
         "city": "Iowa",
         "country": "USA"
     },
@@ -347,7 +347,7 @@
         "name": "Greg",
         "phone": "346597845",
         "dishes": ["Grilled Cheese"],
-        "paymentModes": "Cash",
+        "paymentModes": ["Cash"],
         "city": "Mississippi",
         "country": "USA"
     },
@@ -355,7 +355,7 @@
         "name": "Fred",
         "phone": "264579654",
         "dishes": ["Panini"],
-        "paymentModes": "Cash",
+        "paymentModes": ["Cash"],
         "city": "Venice",
         "country": "Italy"
     },
@@ -363,7 +363,7 @@
         "name": "Sven",
         "phone": "134659778",
         "dishes": ["Pho"],
-        "paymentModes": "Cash",
+        "paymentModes": ["Cash"],
         "city": "Hanoi",
         "country": "Vietnam"
     },
@@ -371,7 +371,7 @@
         "name": "Liam",
         "phone": "346985795",
         "dishes": ["Pizza"],
-        "paymentModes": "Cash",
+        "paymentModes": ["Cash"],
         "city": "Mexico City",
         "country": "Mexico"
     },
@@ -379,7 +379,7 @@
         "name": "Tom",
         "phone": "154629876",
         "dishes": ["Pretzel"],
-        "paymentModes": "Cash",
+        "paymentModes": ["Cash"],
         "city": "Colorado",
         "country": "USA"
     },
@@ -395,7 +395,7 @@
         "name": "Ian",
         "phone": "532789652",
         "dishes": ["Pancakes"],
-        "paymentModes": "Cash",
+        "paymentModes": ["Cash"],
         "city": "Washington",
         "country": "USA"
     },

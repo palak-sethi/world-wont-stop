@@ -1,6 +1,11 @@
 var mainContainer = document.getElementsByClassName("componentContainer")[0];
 var searchBox = document.getElementById("search_box");
-
+window.onload = function() {
+    setTimeout(function(){ document.getElementById("load").style.opacity = "-100";  }, 3000);
+    setTimeout(function(){ document.getElementById("load").style.display = "none";  }, 3001);
+    
+    // this.console.log("chal raha hai")//example function call.
+  }
 async function postData(url = '', searchText) {
     const response = await fetch(url);
     const cards = await response.json();
@@ -23,27 +28,40 @@ async function covidCasesData(url) {
     const cases = await response.json();
     return cases;
 }
-
+{/* <img class="w-8 m-2" src="assets/cash.svg">
+                <img class="w-8 m-2" src="assets/Gpay.svg">
+                <img class="w-8 m-2" src="assets/Paytm.svg">
+                <img class="w-8 m-2" src="assets/Netbanking.svg"> */}
+                    function PayFN(PaymentArr)
+                    {
+                        let tag=``;
+                        PaymentArr.forEach(element => {
+                            tag+=`<img class="w-8 m-2" src="assets/${element}.svg">`
+                        });
+                        console.log(tag);
+                        return tag;
+                    }
 function appendData(data) {
 
     if (data.length > 0) {
 
         const html = data.map(match => `
         <div class="md:flex bg-gray-300 shadow-lg  rounded-lg p-6 mt-10 md:p-10" style="width: 50%;">
-        <img class="h-16 w-16 md:h-40 md:w-40 rounded-full mx-auto md:mx-0 md:mr-16" src="https://avatars.mds.yandex.net/get-altay/226077/2a00000160b9f8f243035488b3fde484ff3e/L">
+        <img class="h-16 w-16 md:h-40 md:w-40 rounded-full mx-auto md:mx-0 md:mr-16" src="./assets/profile-icon.png">
         <div class="text-center md:text-left">
           <h2 class="text-lg md:text-3xl"> ${match.name} </h2>
             <div class="text-gray-600 md:text-lg">${match.city}, ${match.country}</div>
             <div class="text-red-600 md:text-lg">Phone: ${match.phone}</div>
             <p class="text-sm md:text-lg text-gray-600 flex text-center items-center">
                 Payment method: &nbsp; 
-                <svg class="fill-current text-gray-500 w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                    <path d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
-                </svg>
+                ${PayFN(match.paymentModes)}
+                <!-- <svg class="fill-current text-gray-500 w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+    <path d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
+</svg> -->
                 <!-- Insert different svg graphics like cash for COD, paytm , atm for online banking etc. -->
             </p>
             
-            <button class="modal-open md:text-lg bg-transparent border border-gray-500 hover:border-red-600 text-gray-500 hover:text-red-600 font-bold py-2 px-10 my-2 rounded-lg text-sm">Menu</button>
+            <button class="modal-open md:text-lg bg-transparent border border-gray-500 hover:border-red-600 text-gray-500 hover:text-red-600 font-bold py-2 px-10 my-2 rounded-lg text-sm" onClick="modalOpen('${match.dishes}')">Menu</button>
         </div>
       </div>
         `).join('');
@@ -53,6 +71,11 @@ function appendData(data) {
         mainContainer.innerHTML = '';
     }
 
+}
+
+function modalOpen(arr) {
+    document.getElementById('modal-content').innerHTML = `<p>${arr}</p> - &#8377; 60`;
+    console.log(arr);
 }
 
 // Common Myths Logic
