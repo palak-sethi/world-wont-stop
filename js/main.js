@@ -157,7 +157,7 @@ let cases;
 covidCasesData('https://covid2019-api.herokuapp.com/v2/country/india').then((res) => {
     cases = res;
     document.getElementById('india_cases_active').innerHTML = `${cases.data.active}`;
-    document.getElementById('india_cases_deaths').innerHTML = `Deaths (India): ${cases.data.deaths}`;
+    document.getElementById('india_cases_deaths').innerHTML = `Fatalities (India): ${cases.data.deaths}`;
     document.getElementById('india_cases_recovered').innerHTML = `Recovered (India): ${cases.data.recovered}`;
 });
 
@@ -165,7 +165,7 @@ covidCasesData('https://covid2019-api.herokuapp.com/v2/total').then((res) => {
     cases = res;
     document.getElementById('global_cases_active').innerHTML = `${cases.data.confirmed}`;
     document.getElementById('global_cases_recovered').innerHTML = `${cases.data.recovered}`;
-    document.getElementById('global_cases_deaths').innerHTML = `Deaths (Global): ${cases.data.deaths}`;
+    document.getElementById('global_cases_deaths').innerHTML = `Fatalities (Global): ${cases.data.deaths}`;
 })
 
 searchBox.addEventListener('keyup', () => postData('../data/sample.json', searchBox.value).then(() => modalHelper()));
