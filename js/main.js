@@ -1,18 +1,26 @@
 var mainContainer = document.getElementsByClassName("componentContainer")[0];
 var searchBox = document.getElementById("search_box");
+var TabsContainer = document.getElementById("TabsContainer");
+var initialLoadFlag = 0;
+var url = '../data/sample.json';
+
 window.onload = function() {
     setTimeout(function(){ document.getElementById("load").style.opacity = "-100";  }, 3000);
     setTimeout(function(){ document.getElementById("load").style.display = "none";  }, 3001);
-    
-    // this.console.log("chal raha hai")//example function call.
-  }
+}
 async function postData(url = '', searchText) {
     const response = await fetch(url);
     const cards = await response.json();
 
     let matches = cards.filter(card => {
         const regex = new RegExp(`^${searchText}`, 'gi');
-        return card.city.match(regex) || card.country.match(regex);
+        if (url === '../data/sample.json') {
+            return card.city.match(regex) || card.country.match(regex);
+        } else if (url === '../data/medical.json') {
+            return card.city.match(regex);
+        } else if (url === '../data/vendors.json') {
+            return card.city.match(regex);
+        }
     })
 
     if (searchText.length === 0) {
@@ -28,19 +36,16 @@ async function covidCasesData(url) {
     const cases = await response.json();
     return cases;
 }
-{/* <img class="w-8 m-2" src="assets/cash.svg">
-                <img class="w-8 m-2" src="assets/Gpay.svg">
-                <img class="w-8 m-2" src="assets/Paytm.svg">
-                <img class="w-8 m-2" src="assets/Netbanking.svg"> */}
-                    function PayFN(PaymentArr)
-                    {
-                        let tag=``;
-                        PaymentArr.forEach(element => {
-                            tag+=`<img class="w-8 m-2" src="assets/${element}.svg">`
-                        });
-                        console.log(tag);
-                        return tag;
-                    }
+
+function PayFN(PaymentArr)
+{
+    let tag=``;
+    PaymentArr.forEach(element => {
+        tag+=`<img class="w-8 m-2" src="assets/${element}.svg">`
+    });
+    return tag;
+}
+
 function appendData(data) {
 
     if (data.length > 0) {
@@ -50,32 +55,85 @@ function appendData(data) {
         <img class="h-16 w-16 md:h-40 md:w-40 rounded-full mx-auto md:mx-0 md:mr-16" src="./assets/profile-icon.png">
         <div class="text-center md:text-left">
           <h2 class="text-lg md:text-3xl"> ${match.name} </h2>
-            <div class="text-gray-600 md:text-lg">${match.city}, ${match.country}</div>
+            <div class="text-gray-600 md:text-lg">${printPlace(match.city, match.country)}</div>
             <div class="text-red-600 md:text-lg">Phone: ${match.phone}</div>
             <p class="text-sm md:text-lg text-gray-600 flex text-center items-center">
-                Payment method: &nbsp; 
+                Pay via: &nbsp; 
                 ${PayFN(match.paymentModes)}
-                <!-- <svg class="fill-current text-gray-500 w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-    <path d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
-</svg> -->
-                <!-- Insert different svg graphics like cash for COD, paytm , atm for online banking etc. -->
+                ${showMenu(match.dishes)}
             </p>
-            
-            <button class="modal-open md:text-lg bg-transparent border border-gray-500 hover:border-red-600 text-gray-500 hover:text-red-600 font-bold py-2 px-10 my-2 rounded-lg text-sm" onClick="modalOpen('${match.dishes}')">Menu</button>
         </div>
       </div>
         `).join('');
 
         mainContainer.innerHTML = html;
+        // Added the below content for tabs
+        if (initialLoadFlag == 0) {
+            url = '../data/sample.json';
+            mainContainer.style.backgroundColor='rgba(255, 255, 255, 0.53)';
+            TabsContainer.innerHTML=
+                                    `<li class=" Searchtab ActiveTab" >
+                                    <a class="bg-white inline-block py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold" onclick="changeUrl('../data/sample.json'); TabChange(event);" href="#c1">Street Food</a>
+                                    </li>
+                                    <li class=" Searchtab">
+                                        <a class="bg-white inline-block py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold" onclick="changeUrl('../data/medical.json'); TabChange(event);" href="#c2">Medical Help</a>
+                                    </li>
+                                    <li class=" Searchtab">
+                                        <a class="bg-white inline-block py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold" onclick="changeUrl('../data/vendors.json'); TabChange(event);" href="#c3">Groceries</a>
+                                    </li>`;
+            initialLoadFlag++;
+        }
     } else {
         mainContainer.innerHTML = '';
+        mainContainer.innerHTML = '';
+        mainContainer.style.backgroundColor='transparent';
+        TabsContainer.innerHTML='';
+        initialLoadFlag = 0;
+        url = '../data/sample.json';
     }
 
 }
 
+// funtion called when tab is clicked	
+function TabChange(event) {	
+    let Tabarr=document.getElementsByClassName('Searchtab');	
+        
+    let Active=event.target.parentElement;	
+            
+    [...Tabarr].forEach(element => {	
+        let bool = element.classList.contains('ActiveTab');	
+        if(bool) {	
+            element.classList.remove("ActiveTab");	
+        }
+    });	
+    Active.classList.add("ActiveTab");
+    postData(url, searchBox.value);
+}
 function modalOpen(arr) {
     document.getElementById('modal-content').innerHTML = `<p>${arr}</p> - &#8377; 60`;
-    console.log(arr);
+}
+
+// function to modify url on tab click
+function changeUrl(newurl) {
+    url = newurl;
+}
+
+// function to print relevant location information
+function printPlace(city, country) {
+    if (country == undefined) {
+        return `${city}`;
+    } else {
+        return `${city}, ${country}`;
+    }
+}
+
+// function to determine if the menu should be shown
+function showMenu(dishes) {
+    if (url == '../data/sample.json') {
+        return `<button class="modal-open md:text-lg bg-transparent border border-gray-500 hover:border-red-600 text-gray-500 hover:text-red-600 font-bold py-2 px-10 my-2 rounded-lg text-sm" onClick="modalOpen('${dishes}')">Menu</button>`;
+    } else {
+        return ``;
+    }
 }
 
 // Common Myths Logic
@@ -168,4 +226,4 @@ covidCasesData('https://covid2019-api.herokuapp.com/v2/total').then((res) => {
     document.getElementById('global_cases_deaths').innerHTML = `Fatalities (Global): ${cases.data.deaths}`;
 })
 
-searchBox.addEventListener('keyup', () => postData('../data/sample.json', searchBox.value).then(() => modalHelper()));
+searchBox.addEventListener('keyup', () => postData(url, searchBox.value).then(() => modalHelper()));
