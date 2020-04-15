@@ -83,8 +83,105 @@
   </div>
   <!-- Main End -->
 
+  <div style="background-image: url('./assets/search-bg.png');background-size: cover;" class="h-screen overflow-y-auto">
+    <div class=" rounded text-center w-4/6 overflow-hidden shadow-lg mx-auto my-16 py-8"
+      style="background-color: rgba(255, 255, 255, 0.658);">
 
-  <div class="mt-64 md:mt-4 flex justify-center w-full items-center flex-wrap">
+      <p class="opacity-100 text-5xl ...">
+        Find Your Nearest Shops
+      </p>
+      <p class="opacity-100 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3lg ...">They need our help too to
+        survive this pandemic</p>
+    </div>
+    <div class="searchcontainer container mx-auto my-16 px-4">
+
+      <div class="pt-2 relative mx-auto text-gray-600 .text-center">
+        <input class="border-2 border-gray-300 bg-white h-10 SearchInput px-5 rounded-lg text-lg focus:outline-none"
+          type="search" id="search_box" name="search" placeholder="Enter City">
+        <button type="submit" class="SearchBtn">
+          <svg class="text-gray-600 h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+            viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve"
+            width="512px" height="512px">
+            <path
+              d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- Renders result cards -->
+    <div class="flex content-center justify-center flex-wrap ">	
+	    <ul class="flex" id="TabsContainer">	
+	      	
+	    </ul>	
+	    <div class="componentContainer">	
+	     	
+	    </div>
+     </div>
+  </div>
+
+  <!-- How it works section start -->
+  <section class="py-12 px-8">
+    <h2 class="text-5xl mb-8 text-left font-heading  border-b-4 border-indigo-500 w-1/2">How it works for customers?</h2>
+    <div class="flex flex-wrap -mx-8">
+      <div class="lg:w-1/3 px-8 mb-8 lg:mb-0"><img src="placeholders/icons/mobile.svg" alt="">
+        <h3 class="text-2xl mb-3 font-heading">Contact our Sales</h3>
+        <p class="text-gray-500 leading-relaxed">During the phone call we will be able to present you all details of cooperation, pricing and special offers, suited for your company.</p>
+      </div>
+      <div class="lg:w-1/3 px-8 mb-8 lg:mb-0"><img src="placeholders/icons/pen.svg" alt="">
+        <h3 class="text-2xl mb-3 font-heading">Sign the documents</h3>
+        <p class="text-gray-500 leading-relaxed">We can also talk during business meeting, or visit your office anytime you want! Our employees will provide proper contracts.</p>
+      </div>
+      <div class="lg:w-1/3 px-8 mb-8 lg:mb-0"><img src="placeholders/icons/van.svg" alt="">
+        <h3 class="text-2xl mb-3 font-heading">Wait for delivery!</h3>
+        <p class="text-gray-500 leading-relaxed">You don’t buy a pig... or shall I say a paper in a poke. The supplies will be delivered to your company every first Monday of the month.</p>
+      </div>
+    </div>
+  </section>
+  <!-- How it works section end -->
+
+  <!-- Our Mission Section -->
+  <div class="mx-auto p-16 sm:p-24 lg:p-48 bg-gray-200">
+
+    <div class="relative rounded-lg block md:flex items-center bg-gray-100 shadow-xl" style="min-height: 19rem;">
+      <div class="relative w-full md:w-2/5 h-full overflow-hidden rounded-t-lg md:rounded-t-none md:rounded-l-lg"
+        style="min-height: 19rem;">
+        <img class="absolute inset-0 w-full h-full object-cover object-center" src="./assets/mission-thumb.jpg" alt="">
+        <div class="absolute inset-0 w-full h-full bg-blue-900 opacity-75"></div>
+        <div
+          class="absolute inset-0 w-full h-full flex items-center justify-center fill-current text-white text-2xl lg:text-4xl">
+          Our Mission
+        </div>
+      </div>
+
+      <div class="w-full md:w-3/5 h-full flex items-center bg-gray-100 rounded-lg">
+        <div class="p-12 md:pr-24 md:pl-16 md:py-12">
+          <p class="text-gray-600"><span class="text-gray-900">World Won't Stop</span> initiative is a global relief
+            effort that aims to provide respite for all the daily wage workers in poor countries affected by the
+            COVID-19 outbreak. We aim to provide a global index of local businesses available to everyone.</p>
+          <a class="flex items-baseline mt-3 text-blue-600 hover:text-indigo-900 focus:text-indigo-900"
+            style="transition: all 0.3s;" href="https://devpost.com/software/world-won-t-stop">
+            <span>Learn more about our vision</span>
+            <span class="text-xs ml-1">&#x279c;</span>
+          </a>
+        </div>
+        <svg class="hidden md:block absolute inset-y-0 h-full w-24 fill-current text-gray-100 -ml-12"
+          viewBox="0 0 100 100" preserveAspectRatio="none">
+          <polygon points="50,0 100,0 50,100 0,100" />
+        </svg>
+      </div>
+    </div>
+
+  </div>
+  <!-- Our Mission end -->
+
+  <div class="flex m-2 mb-4 text-center">
+      <h1 class="p-12 text-center text-xl lg:text-6xl md:text-6xl sm:text-6xl">
+        Resources & Information To Help Our Battle ⚔ 
+      </h1>
+  </div>
+  <!-- COVID-19 Dashboard -->
+  <div class="mt-16 md:mt-4 flex justify-center w-full items-center flex-wrap">
 
     <img class="w-48 h-48 md:w-64 md:h-64 m-4" src="assets/wearing_a_mask_.svg" alt="image">
 
@@ -129,86 +226,9 @@
     </div>
   </div>
 
-  <div style="background-image: url('./assets/search-bg.png');background-size: cover;" class="h-screen overflow-y-auto">
-    <div class=" rounded text-center w-4/6 overflow-hidden shadow-lg mx-auto my-16 py-8"
-      style="background-color: rgba(255, 255, 255, 0.658);">
-
-      <p class="opacity-100 text-5xl ...">
-        Find Your Nearest Shops
-      </p>
-      <p class="opacity-100 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3lg ...">They need our help too to
-        survive this pandemic</p>
-    </div>
-    <div class="searchcontainer container mx-auto my-16 px-4">
-
-      <div class="pt-2 relative mx-auto text-gray-600 .text-center">
-        <input class="border-2 border-gray-300 bg-white h-10 SearchInput px-5 rounded-lg text-lg focus:outline-none"
-          type="search" id="search_box" name="search" placeholder="Enter City">
-        <button type="submit" class="SearchBtn">
-          <svg class="text-gray-600 h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
-            viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve"
-            width="512px" height="512px">
-            <path
-              d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
-          </svg>
-        </button>
-      </div>
-    </div>
-    <!-- Renders result cards -->
-    <div class="flex content-center justify-center flex-wrap ">	
-	    <ul class="flex" id="TabsContainer">	
-	      	
-	    </ul>	
-	    <div class="componentContainer">	
-	     	
-	    </div>
-     </div>
-  </div>
-  <!-- Our Mission Section -->
-  <div class="mx-auto p-16 sm:p-24 lg:p-48 bg-gray-200">
-
-    <div class="relative rounded-lg block md:flex items-center bg-gray-100 shadow-xl" style="min-height: 19rem;">
-      <div class="relative w-full md:w-2/5 h-full overflow-hidden rounded-t-lg md:rounded-t-none md:rounded-l-lg"
-        style="min-height: 19rem;">
-        <img class="absolute inset-0 w-full h-full object-cover object-center" src="./assets/mission-thumb.jpg" alt="">
-        <div class="absolute inset-0 w-full h-full bg-blue-900 opacity-75"></div>
-        <div
-          class="absolute inset-0 w-full h-full flex items-center justify-center fill-current text-white text-2xl lg:text-4xl">
-          Our Mission
-        </div>
-      </div>
-
-      <div class="w-full md:w-3/5 h-full flex items-center bg-gray-100 rounded-lg">
-        <div class="p-12 md:pr-24 md:pl-16 md:py-12">
-          <p class="text-gray-600"><span class="text-gray-900">World Won't Stop</span> initiative is a global relief
-            effort that aims to provide respite for all the daily wage workers in poor countries affected by the
-            COVID-19 outbreak. We aim to provide a global index of local businesses available to everyone.</p>
-          <a class="flex items-baseline mt-3 text-blue-600 hover:text-indigo-900 focus:text-indigo-900"
-            style="transition: all 0.3s;" href="https://devpost.com/software/world-won-t-stop">
-            <span>Learn more about our vision</span>
-            <span class="text-xs ml-1">&#x279c;</span>
-          </a>
-        </div>
-        <svg class="hidden md:block absolute inset-y-0 h-full w-24 fill-current text-gray-100 -ml-12"
-          viewBox="0 0 100 100" preserveAspectRatio="none">
-          <polygon points="50,0 100,0 50,100 0,100" />
-        </svg>
-      </div>
-    </div>
-
-  </div>
-  <!-- Our Mission end -->
-
-  <div class="flex m-2 mb-4 text-center">
-      <h1 class="p-12 text-center text-xl lg:text-6xl md:text-6xl sm:text-6xl">
-        Resources & Information To Help Our Battle ⚔ 
-      </h1>
-  </div>
-
   <!-- Common Myths -->
   <div class="w-full md:w-3/5 mx-auto p-8">
-    <p class="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3lg p-6">COVID-19 Common Myths, BUSTED!</p>
+    <p class="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3lg p-6 border-b-4 border-red-500">Common COVID-19 Myths, BUSTED!</p>
     <div class="shadow-md">
       <div class="tab w-full overflow-hidden border-t">
         <input class="absolute opacity-0" id="tab-single-one" type="radio" name="tabs2">
@@ -231,7 +251,7 @@
       </div>
       <div class="tab w-full overflow-hidden border-t">
         <input class="absolute opacity-0" id="tab-single-three" type="radio" name="tabs2">
-        <label class="block p-5 leading-normal cursor-pointer" for="tab-single-three">Can I get infected from the
+        <label class="block p-5 leading-normal cursor-pointer" for="tab-single-three">Can I get infected from a
           delivery person?</label>
         <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-red-500 leading-normal">
           <p class="p-5">We will have every registered person on our index to go through a COVID-19 test and only

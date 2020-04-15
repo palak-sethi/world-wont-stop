@@ -335,7 +335,7 @@ body {
 }
 
 /* Landing SVG temp fix */
-@media only screen and (max-width: 762px) {
+@media only screen and (max-width: 450px) {
     .landing-svg {
         display: unset !important;
     }
