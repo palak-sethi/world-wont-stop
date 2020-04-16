@@ -239,6 +239,21 @@ body {
     position: relative;
 }
 
+#TabsContainer{
+    box-sizing: border-box;
+}
+
+.Searchtab{
+    border-bottom: 2px solid rgb(182, 182, 182) ;
+}
+
+.ActiveTab{
+    border:2px solid rgb(182, 182, 182);
+    border-radius: 2%;
+    color:darkblue;
+    border-bottom:none !important;
+}
+
 .iframe-container iframe {
     border: 0;
     left: 0;
@@ -320,7 +335,7 @@ body {
 }
 
 /* Landing SVG temp fix */
-@media only screen and (max-width: 762px) {
+@media only screen and (max-width: 450px) {
     .landing-svg {
         display: unset !important;
     }

@@ -1,0 +1,308 @@
+[{
+    "name": "Shyam",
+    "phone": "8531462597",
+    "paymentModes": ["Cash", "Paytm"],
+    "city": "Vishakhapatnam"
+},
+{
+    "name": "Ram",
+    "phone": "9653652147",
+    "paymentModes": "GPay",
+    "city": "Patna"
+},
+{
+    "name": "Mohan",
+    "phone": "8625413978",
+    "paymentModes": ["Cash", "Gpay"],
+    "city": "Patna"
+},
+{
+    "name": "Sohan",
+    "phone": "8546321178",
+    "paymentModes": ["Cash", "Paytm"],
+    "city": "Muzaffarnagar"
+},
+{
+    "name": "Gurmeet",
+    "phone": "8613579452",
+    "paymentModes": ["Cash", "Gpay"],
+    "city": "Chandigarh"
+},
+{
+    "name": "Gangaram",
+    "phone": "8456211564",
+    "paymentModes": ["Cash", "Paytm"],
+    "city": "Gurgaon"
+},
+{
+    "name": "Girdhar",
+    "phone": "8254136788",
+    "paymentModes": ["Cash", "Gpay"],
+    "city": "Kolkata"
+},
+{
+    "name": "Pradhan",
+    "phone": "9465312879",
+    "paymentModes": ["Cash", "Gpay"],
+    "city": "Ahmedabad"
+},
+{
+    "name": "Tilak",
+    "phone": "7613254987",
+    "paymentModes": ["Cash", "Gpay", "Paytm"],
+    "city": "Hyderabad"
+},
+{
+    "name": "Gurpreet",
+    "phone": "7615432597",
+    "paymentModes": ["Cash", "Paytm"],
+    "city": "Ambala"
+},
+{
+    "name": "Harman",
+    "phone": "6458791354",
+    "paymentModes": ["Cash", "Paytm"],
+    "city": "Patiala"
+},
+{
+    "name": "Shamlal",
+    "phone": "8546321987",
+    "paymentModes": ["Cash", "Gpay", "Paytm"],
+    "city": "Ludhiana"
+},
+{
+    "name": "Jethalal",
+    "phone": "6235236789",
+    "paymentModes": ["Cash", "Gpay"],
+    "city": "Mumbai"
+},
+{
+    "name": "Karan",
+    "phone": "8542362145",
+    "paymentModes": ["Cash", "Gpay"],
+    "city": "Kolhapur"
+},
+{
+    "name": "Manan",
+    "phone": "7508248066",
+    "paymentModes": ["Cash", "Gpay", "Paytm"],
+    "city": "Delhi"
+},
+{
+    "name": "Amit",
+    "phone": "7659852145",
+    "paymentModes": ["Cash", "Gpay", "Paytm"],
+    "city": "Chandigarh"
+},
+{
+    "name": "Arjun",
+    "phone": "8254632514",
+    "paymentModes": ["Cash", "Paytm"],
+    "city": "Jammu"
+},
+{
+    "name": "Ajay",
+    "phone": "7625143265",
+    "paymentModes": ["Cash", "Paytm"],
+    "city": "Ludhiana"
+},
+{
+    "name": "Adarsh",
+    "phone": "8521463259",
+    "paymentModes": ["Cash", "Gpay"],
+    "city": "Jalandhar"
+},
+{
+    "name": "Lakhan",
+    "phone": "9652314865",
+    "paymentModes": ["Cash", "Gpay", "Paytm"],
+    "city": "Bhojpur"
+},
+{
+    "name": "Magan",
+    "phone": "8563214652",
+    "paymentModes": ["Cash", "Gpay", "Paytm"],
+    "city": "Rajasthan"
+},
+{
+    "name": "Bharat",
+    "phone": "7541236985",
+    "paymentModes": ["Cash", "Paytm"],
+    "city": "Nagpur"
+},
+{
+    "name": "Jagat",
+    "phone": "9521463879",
+    "paymentModes": ["Cash", "Gpay", "Paytm"],
+    "city": "Gujarat"
+},
+{
+    "name": "Samarth",
+    "phone": "7546321895",
+    "paymentModes": ["Cash", "Gpay"],
+    "city": "Chandigarh"
+},
+{
+    "name": "Sagar",
+    "phone": "7125463985",
+    "paymentModes": ["Cash", "Gpay", "Paytm"],
+    "city": "Mumbai"
+},
+{
+    "name": "Gagan",
+    "phone": "8216453289",
+    "paymentModes": ["Cash", "Gpay"],
+    "city": "Hyderabad"
+},
+{
+    "name": "Raman",
+    "phone": "7645821349",
+    "paymentModes": ["Cash", "Paytm"],
+    "city": "Bangalore"
+},
+{
+    "name": "Mohan",
+    "phone": "6485137952",
+    "paymentModes": ["Cash", "Gpay"],
+    "city": "Chandigarh"
+},
+{
+    "name": "Shyam Lal",
+    "phone": "8531409756",
+    "paymentModes": ["Cash", "Paytm"],
+    "city": "Jaipur"
+},
+{
+    "name": "Rajat",
+    "phone": "8465997231",
+    "paymentModes": ["Paytm", "Gpay"],
+    "city": "Bangalore"
+},
+
+{
+    "name": "Sukhdeep",
+    "phone": "354698521",
+    "paymentModes": ["Cash", "Gpay"],
+    "city": "Mumbai"
+},
+{
+    "name": "Mandeep",
+    "phone": "421659875",
+    "paymentModes": ["Cash", "Gpay", "Paytm"],
+    "city": "Surat"
+},
+{
+    "name": "Maninder",
+    "phone": "154876235",
+    "paymentModes": ["Cash", "Paytm"],
+    "city": "Ajmer"
+},
+{
+    "name": "Rajinder",
+    "phone": "154879652",
+    "paymentModes": ["Cash", "Paytm"],
+    "city": "Sirsa"
+},
+{
+    "name": "Raj",
+    "phone": "378549621",
+    "paymentModes": ["Cash", "Gpay"],
+    "city": "Faridabad"
+},
+{
+    "name": "Rahul",
+    "phone": "153497865",
+    "paymentModes": ["Cash", "Gpay", "Paytm"],
+    "city": "Ferozpur"
+},
+{
+    "name": "Uday",
+    "phone": "278546932",
+    "paymentModes": ["Cash", "Gpay", "Paytm"],
+    "city": "Gurgaon"
+},
+{
+    "name": "Magan",
+    "phone": "164985234",
+    "paymentModes": ["Cash", "Paytm"],
+    "city": "Noida"
+},
+{
+    "name": "Jatin",
+    "phone": "316458246",
+    "paymentModes": ["Cash", "Gpay", "Paytm"],
+    "city": "Pune"
+},
+{
+    "name": "Joginder",
+    "phone": "325469852",
+    "paymentModes": ["Cash", "Gpay"],
+    "city": "Hyderabad"
+},
+{
+    "name": "Ritesh",
+    "phone": "421659785",
+    "paymentModes": ["Cash", "Gpay", "Paytm"],
+    "city": "Bhojpur"
+},
+{
+    "name": "Sagar",
+    "phone": "124698562",
+    "paymentModes": ["Cash", "Gpay"],
+    "city": "Bangalore"
+},
+{
+    "name": "Madhav",
+    "phone": "264585235",
+    "paymentModes": ["Cash", "Gpay", "Paytm"],
+    "city": "Panchkula"
+},
+{
+    "name": "Gagan",
+    "phone": "346597845",
+    "paymentModes": ["Cash", "Gpay", "Paytm"],
+    "city": "Manali"
+},
+{
+    "name": "Feroz",
+    "phone": "264579654",
+    "paymentModes": ["Cash", "Paytm"],
+    "city": "Shimla"
+},
+{
+    "name": "Sajan",
+    "phone": "134659778",
+    "paymentModes":["Cash", "Gpay", "Paytm"],
+    "city": "Katra"
+},
+{
+    "name": "Tejinder",
+    "phone": "346985795",
+    "paymentModes": ["Cash", "Paytm"],
+    "city": "Kolkata"
+},
+{
+    "name": "Raghav",
+    "phone": "154629876",
+    "paymentModes": ["Cash", "Gpay", "Paytm"],
+    "city": "Chandigarh"
+},
+{
+    "name": "Puneet",
+    "phone": "254688566",
+    "paymentModes": ["Cash", "Gpay"],
+    "city": "Bihar"
+},
+{
+    "name": "Ishaan",
+    "phone": "532789652",
+    "paymentModes": ["Cash", "Gpay", "Paytm"],
+    "city": "Ludhiana"
+},
+{
+    "name": "Harish",
+    "phone": "524632597",
+    "paymentModes": ["Cash", "Paytm"],
+    "city": "Gangtok"
+ }
+]
